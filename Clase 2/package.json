@@ -1,0 +1,24 @@
+{
+  "name": "clase-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1.http.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "port": "cross-env PORT=2323 node 1.http.js",
+    "dev:3": "node --watch 3.express.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "7.0.3",
+    "standard": "17.1.0"
+  },
+  "eslintConfig": {
+    "extends": "standard"
+  },
+  "dependencies": {
+    "express": "4.18.2"
+  }
+}

@@ -1,0 +1,32 @@
+### Recuperar todas las peliculas
+GET http://localhost:1234/movies
+
+### Recuperar pelicula por Id
+GET http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+
+### Recuperar pelicula por genero
+GET http://localhost:1234/movies?genre=action
+
+### Crear una pelicula con POST
+POST http://localhost:1234/movies
+Content-Type: application/json
+
+{
+    "title": "The godfatherrrrrrrrrrr",
+    "year": 1999,
+    "genre": ["Action"],
+    "director": "Francis Ford Coppola",
+    "duration": 175,
+    "poster": "https://pics.filmaffinity.com/the_godfather-488102675-large.jpg"
+}
+
+### Borrar una pelicula
+DELETE http://localhost:1234/movies/504f3fe6-dd5a-4c6d-9285-cf361abe97e0
+
+### Actualizar una pelicula
+PATCH http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+Content-Type: application/json
+
+{
+    "year": 1999
+}
